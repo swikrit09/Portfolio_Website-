@@ -230,7 +230,7 @@
         }
         .about .about-content .left img{
             height: 350px;
-            width: 350px;
+            width: 300px;
             /* object-fit: cover; */
             border-radius: 50px;
             border: 3px solid rgb(68, 5, 5);
@@ -376,16 +376,16 @@
             width: 90%;
         }
         .skills-content .right .css::before{
-            width: 60%;
+            width: 80%;
         }
         .skills-content .right .js::before{
-            width: 40%;
+            width: 70%;
         }
         .skills-content .right .php::before{
             width: 70%;
         }
         .skills-content .right .mysql::before{
-            width: 60%;
+            width: 80%;
         }
         
         /* projects section styling */
@@ -579,7 +579,7 @@
         @media (max-width: 1104px) {
             .about .about-content .left img{
                 height: 350px;
-                width: 350px;
+                width: 300px;
             }
         }
         
