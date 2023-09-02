@@ -490,7 +490,9 @@
             border: 1px #f53844 solid;
             border-radius: 50%;
         }
-        
+        #icon a{
+            color: #000000;
+        }
         .contact .title::after{
             content: "get in touch";
         }
