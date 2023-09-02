@@ -220,6 +220,32 @@
             background-color: black;
             border-color: #f3ca00;
         }
+        .right-home img{
+            max-width: 600px;
+             max-height: 400px; 
+            object-fit: cover;
+            border-radius: 50px; 
+            box-shadow: 5px 5px 10px black;
+            animation: mymove 2s linear;
+            transition: all 0.4s ease;
+        }
+        @keyframes mymove {
+            0%{
+
+                transform: translateY(50px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        .text-2:hover ~ a {
+            transform: scale(1.1);
+
+        }
+        .right-home img:hover{
+            transform: scale(1.1);
+            
+        }
         
         /* about section styling */
         .about .title::after{
