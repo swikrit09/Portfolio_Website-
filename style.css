@@ -9,6 +9,49 @@
         html{
             scroll-behavior: smooth;
         }
+        /* animation1 */
+        .animationU{
+            animation: moveUp  0.6s linear;
+        }
+        @keyframes moveUp {
+            from{
+                transform: translateY(120px);
+                opacity: 0;
+            }to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+        }
+        @keyframes moveright {
+            0%{
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            100%{
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes moveleft {
+            0%{
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100%{
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .animationL{
+            animation: moveleft  0.7s linear;
+
+        }
+        .animationR{
+            animation: moveright  0.7s linear;
+
+        }
+        
         
         /* custom scroll bar */
         ::-webkit-scrollbar {
@@ -176,7 +219,9 @@
         .home-content{
             margin-right: 100px;
             margin-top: 60px;
+            /* animation: moveright  0.7s linear ; */
         }
+        
         .home .max-width{
           width: 100%;
           display: flex;
@@ -226,20 +271,12 @@
             object-fit: cover;
             border-radius: 50px; 
             box-shadow: 5px 5px 10px black;
-            animation: mymove 2s linear;
-            transition: all 0.4s ease;
+            /* animation: moveleft 0.7s linear; */
+            transition: all 0.3s;
         }
-        @keyframes mymove {
-            0%{
 
-                transform: translateY(50px);
-            }
-            100%{
-                transform: translateY(0);
-            }
-        }
         .text-2:hover ~ a {
-            transform: scale(1.1);
+            transform: scale(1.2);
 
         }
         .right-home img:hover{
